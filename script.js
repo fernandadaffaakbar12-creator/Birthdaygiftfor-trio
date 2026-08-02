@@ -175,7 +175,7 @@
         const pinPopupClose = document.getElementById('pin-popup-close');
 
         // DEFAULT PIN: Silakan ubah angka ini jika ingin PIN lain
-        const SECRET_PIN = "2805";
+        const SECRET_PIN = "0000";
 
         let pinAttempt = 0;
         let popupTimeout = null;
@@ -494,7 +494,32 @@ function bukaKado() {
         if (mainContent) mainContent.classList.remove('hidden');
 
         jalankanAnimasiScroll();
+
+        // Mulai slideshow foto pacar & kue ulang tahun
+        mulaiSlideshowFoto();
     }, 450);
+}
+
+// ==========================================
+// 2b. SLIDESHOW FOTO (FADE IN/OUT BERGANTIAN)
+// ==========================================
+function mulaiSlideshowFoto() {
+    const slides = document.querySelectorAll('.photo-slideshow .slideshow-img');
+    if (slides.length < 2) return;
+
+    let currentIndex = 0;
+    const INTERVAL = 5000; // 5 detik
+
+    setInterval(() => {
+        // Hapus class active dari slide sekarang
+        slides[currentIndex].classList.remove('active');
+
+        // Pindah ke slide berikutnya (loop/repeat)
+        currentIndex = (currentIndex + 1) % slides.length;
+
+        // Tambah class active ke slide baru
+        slides[currentIndex].classList.add('active');
+    }, INTERVAL);
 }
 
 function buatHujanBunga() {
