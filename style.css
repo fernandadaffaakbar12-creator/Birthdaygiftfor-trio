@@ -2245,3 +2245,66 @@ body {
     transform: scale(1);
     transition: transform 0.3s ease;
 }
+
+/* =========================================
+   ANIMASI TULISAN DILUKIS (PAINTED TEXT)
+========================================= */
+.painted-text-svg {
+    overflow: visible;
+}
+
+.painted-text {
+    font-family: 'Caveat', cursive;
+    font-weight: 600;
+    fill: transparent;
+    stroke: #ffb6c1;
+    stroke-width: 1.5;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    filter: drop-shadow(0 0 6px rgba(255, 182, 193, 0.3));
+}
+
+/* Ketika section muncul (is-visible), jalankan animasi lukis */
+.show-on-scroll.is-visible .painted-text {
+    animation: paintStroke 2.5s cubic-bezier(0.22, 0.61, 0.36, 1) forwards,
+               paintFill 1.2s ease-in 2s forwards,
+               paintGlow 2s ease-in-out 2.5s infinite alternate;
+}
+
+/* Fase 1: Goresan kuas melukis huruf */
+@keyframes paintStroke {
+    0% {
+        stroke-dashoffset: 1500;
+        stroke-opacity: 0.4;
+    }
+    20% {
+        stroke-opacity: 1;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke-opacity: 1;
+    }
+}
+
+/* Fase 2: Warna mengisi huruf setelah selesai dilukis */
+@keyframes paintFill {
+    0% {
+        fill: transparent;
+    }
+    100% {
+        fill: #ffb6c1;
+        stroke-opacity: 0.3;
+    }
+}
+
+/* Fase 3: Glow halus setelah selesai */
+@keyframes paintGlow {
+    0% {
+        filter: drop-shadow(0 0 4px rgba(255, 182, 193, 0.3));
+    }
+    100% {
+        filter: drop-shadow(0 0 12px rgba(255, 182, 193, 0.6));
+    }
+}
