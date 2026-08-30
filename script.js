@@ -175,7 +175,7 @@
         const pinPopupClose = document.getElementById('pin-popup-close');
 
         // DEFAULT PIN: Silakan ubah angka ini jika ingin PIN lain
-        const SECRET_PIN = "0304";
+        const SECRET_PIN = "1925";
 
         let pinAttempt = 0;
         let popupTimeout = null;

@@ -15,7 +15,7 @@ html {
 
 body {
     font-family: 'Outfit', sans-serif;
-    background: linear-gradient(to bottom, #020111, #20124d, #000022);
+    background: linear-gradient(to bottom, #010d08, #0a2e1a, #001a0d);
     color: #ffffff;
     overflow-x: hidden;
     min-height: 100vh;
@@ -28,13 +28,13 @@ body {
 .aesthetic-font {
     font-family: 'Caveat', cursive;
     font-size: 3.5rem;
-    color: #ffb6c1;
-    /* Warna Baby Pink */
-    text-shadow: 2px 2px 8px rgba(255, 182, 193, 0.4);
+    color: #7FC8A9;
+    /* Warna Hijau Botol */
+    text-shadow: 2px 2px 8px rgba(127, 200, 169, 0.4);
 }
 
 .baby-pink-text {
-    color: #ffb6c1 !important;
+    color: #7FC8A9 !important;
 }
 
 .white-text {
@@ -63,7 +63,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(ellipse at center, #0a0020 0%, #000008 70%, #000000 100%);
+    background: radial-gradient(ellipse at center, #001a0d 0%, #000d06 70%, #000000 100%);
     z-index: 99999;
     display: flex;
     justify-content: center;
@@ -91,10 +91,10 @@ body {
     position: absolute;
     font-family: 'Caveat', cursive;
     font-size: 10px;
-    color: rgba(255, 182, 193, 0.9);
+    color: rgba(127, 200, 169, 0.9);
     white-space: nowrap;
     pointer-events: none;
-    text-shadow: 0 0 6px rgba(255, 120, 180, 0.6);
+    text-shadow: 0 0 6px rgba(46, 139, 87, 0.6);
     transition: transform 1.5s ease-in-out, opacity 0.8s ease;
     opacity: 0;
     transform: translate(0, 0);
@@ -107,7 +107,7 @@ body {
 
 .love-particle.formed {
     opacity: 1;
-    text-shadow: 0 0 8px rgba(255, 120, 180, 0.8), 0 0 20px rgba(255, 100, 150, 0.4);
+    text-shadow: 0 0 8px rgba(46, 139, 87, 0.8), 0 0 20px rgba(0, 107, 63, 0.4);
 }
 
 .love-particle.glow-pulse {
@@ -116,12 +116,12 @@ body {
 
 @keyframes particleGlow {
     0% {
-        text-shadow: 0 0 8px rgba(255, 120, 180, 0.8), 0 0 20px rgba(255, 100, 150, 0.5);
+        text-shadow: 0 0 8px rgba(46, 139, 87, 0.8), 0 0 20px rgba(0, 107, 63, 0.5);
         filter: brightness(1);
     }
 
     100% {
-        text-shadow: 0 0 15px rgba(255, 120, 180, 1), 0 0 35px rgba(255, 100, 150, 0.8), 0 0 60px rgba(200, 50, 100, 0.5);
+        text-shadow: 0 0 15px rgba(46, 139, 87, 1), 0 0 35px rgba(0, 107, 63, 0.8), 0 0 60px rgba(0, 77, 44, 0.5);
         filter: brightness(1.3);
     }
 }
@@ -134,7 +134,7 @@ body {
     border-radius: 50%;
     pointer-events: none;
     opacity: 0;
-    box-shadow: 0 0 6px 2px rgba(255, 182, 193, 0.8);
+    box-shadow: 0 0 6px 2px rgba(127, 200, 169, 0.8);
 }
 
 @keyframes sparkleFloat {
@@ -295,14 +295,14 @@ body {
 
 .bouquet-img {
     width: 200px;
-    filter: drop-shadow(0 0 20px rgba(255, 182, 193, 0.5));
+    filter: drop-shadow(0 0 20px rgba(127, 200, 169, 0.5));
 }
 
 .click-text {
     margin-top: 20px;
     font-size: 1.2rem;
     letter-spacing: 2px;
-    color: #ffb6c1;
+    color: #7FC8A9;
 }
 
 @keyframes float-bouquet {
@@ -394,7 +394,7 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    filter: drop-shadow(0 0 20px rgba(255, 182, 193, 0.45));
+    filter: drop-shadow(0 0 20px rgba(127, 200, 169, 0.45));
     animation: float-birthday-photo 4s ease-in-out infinite;
     border-radius: 50%;
 }
@@ -546,8 +546,8 @@ body {
 }
 
 .planet-card:hover {
-    border-color: #ffb6c1;
-    box-shadow: 0 0 25px #ffb6c1;
+    border-color: #7FC8A9;
+    box-shadow: 0 0 25px #7FC8A9;
 }
 
 .planet-card img {
@@ -621,7 +621,7 @@ body {
     max-width: 90vw;
     max-height: 75vh;
     border-radius: 15px;
-    box-shadow: 0 10px 50px rgba(255, 182, 193, 0.5);
+    box-shadow: 0 10px 50px rgba(127, 200, 169, 0.5);
     transform: scale(0.7);
     transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -630,7 +630,7 @@ body {
 #modal-iframe {
     display: none;
     border-radius: 15px;
-    box-shadow: 0 10px 50px rgba(255, 182, 193, 0.5);
+    box-shadow: 0 10px 50px rgba(127, 200, 169, 0.5);
     transform: scale(0.7);
     transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -732,7 +732,7 @@ body {
 /* Hint text */
 .gallery-hint {
     font-size: 0.85rem;
-    color: rgba(255, 182, 193, 0.8);
+    color: rgba(127, 200, 169, 0.8);
     text-align: center;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -772,13 +772,13 @@ body {
 .gallery-slider-thumb {
     width: 30%;
     height: 100%;
-    background: linear-gradient(90deg, #ffb6c1, #ff7eb3);
+    background: linear-gradient(90deg, #7FC8A9, #2E8B57);
     border-radius: 4px;
     position: absolute;
     left: 0;
     top: 0;
     transition: left 0.1s ease-out;
-    box-shadow: 0 0 8px rgba(255, 182, 193, 0.5);
+    box-shadow: 0 0 8px rgba(127, 200, 169, 0.5);
 }
 
 .scratch-card {
@@ -868,8 +868,8 @@ body {
 }
 
 .polaroid:hover {
-    /* Efek Neon Baby Pink saat disorot */
-    box-shadow: 0 0 15px #ffb6c1, 0 0 35px #ffb6c1 !important;
+    /* Efek Neon Hijau Botol saat disorot */
+    box-shadow: 0 0 15px #7FC8A9, 0 0 35px #7FC8A9 !important;
     filter: brightness(1.1);
 }
 
@@ -942,7 +942,7 @@ body {
     max-width: 90vw;
     max-height: 90vh;
     border-radius: 15px;
-    box-shadow: 0 10px 50px rgba(255, 182, 193, 0.5);
+    box-shadow: 0 10px 50px rgba(127, 200, 169, 0.5);
     transform: scale(0.7);
     transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -992,7 +992,7 @@ body {
 
 .now-playing-top {
     font-size: 0.65rem;
-    color: #ffb6c1;
+    color: #7FC8A9;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 8px;
@@ -1158,8 +1158,8 @@ body {
     .typing-text::after {
         content: '|';
         /* Garis kursor mesin tik */
-        color: #ffb6c1;
-        /* Kursor berwarna baby pink */
+        color: #7FC8A9;
+        /* Kursor berwarna hijau botol */
         animation: blink-cursor 0.7s infinite;
         display: none;
         /* Sembunyikan kursor secara default */
@@ -1341,7 +1341,7 @@ body {
 
 #pin-input:focus {
     background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 15px rgba(255, 117, 140, 0.4);
+    box-shadow: 0 0 15px rgba(46, 139, 87, 0.4);
 }
 
 /* =========================================
@@ -1371,8 +1371,8 @@ body {
 }
 
 .pin-popup-box {
-    background: linear-gradient(145deg, rgba(30, 15, 50, 0.95), rgba(15, 10, 35, 0.98));
-    border: 1px solid rgba(255, 182, 193, 0.25);
+    background: linear-gradient(145deg, rgba(10, 35, 25, 0.95), rgba(5, 20, 15, 0.98));
+    border: 1px solid rgba(127, 200, 169, 0.25);
     border-radius: 24px;
     padding: 35px 30px 28px;
     text-align: center;
@@ -1380,7 +1380,7 @@ body {
     width: 85%;
     box-shadow:
         0 20px 60px rgba(0, 0, 0, 0.6),
-        0 0 40px rgba(255, 182, 193, 0.1),
+        0 0 40px rgba(127, 200, 169, 0.1),
         inset 0 1px 0 rgba(255, 255, 255, 0.08);
     transform: scale(0) rotate(-8deg);
     transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -1451,10 +1451,10 @@ body {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    background: linear-gradient(135deg, #2E8B57, #006B3F);
     color: #ffffff;
     letter-spacing: 0.5px;
-    box-shadow: 0 4px 15px rgba(255, 117, 140, 0.4);
+    box-shadow: 0 4px 15px rgba(46, 139, 87, 0.4);
     transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
     opacity: 0;
     transform: translateY(8px);
@@ -1467,8 +1467,8 @@ body {
 }
 
 .pin-popup-close:hover {
-    background: linear-gradient(135deg, #ff9ac6, #ff8da0);
-    box-shadow: 0 6px 25px rgba(255, 117, 140, 0.6);
+    background: linear-gradient(135deg, #5BAF8A, #3D9970);
+    box-shadow: 0 6px 25px rgba(46, 139, 87, 0.6);
     transform: translateY(-2px) !important;
 }
 
@@ -1570,12 +1570,12 @@ body {
     font-family: 'Caveat', cursive;
     font-size: 1.5rem;
     color: #fff;
-    background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff6a88);
+    background: linear-gradient(135deg, #2E8B57, #006B3F, #005C35);
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.4s ease;
-    box-shadow: 0 4px 20px rgba(255, 126, 179, 0.4), 0 0 30px rgba(255, 126, 179, 0.15);
+    box-shadow: 0 4px 20px rgba(46, 139, 87, 0.4), 0 0 30px rgba(46, 139, 87, 0.15);
     animation: candleBtnPulse 2.5s ease-in-out infinite;
     position: relative;
     overflow: hidden;
@@ -1595,12 +1595,12 @@ body {
 
 .btn-tiup-lilin:hover {
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 8px 30px rgba(255, 126, 179, 0.6), 0 0 50px rgba(255, 126, 179, 0.25);
+    box-shadow: 0 8px 30px rgba(46, 139, 87, 0.6), 0 0 50px rgba(46, 139, 87, 0.25);
 }
 
 @keyframes candleBtnPulse {
-    0%, 100% { box-shadow: 0 4px 20px rgba(255, 126, 179, 0.4), 0 0 30px rgba(255, 126, 179, 0.15); }
-    50% { box-shadow: 0 4px 30px rgba(255, 126, 179, 0.6), 0 0 50px rgba(255, 126, 179, 0.3); }
+    0%, 100% { box-shadow: 0 4px 20px rgba(46, 139, 87, 0.4), 0 0 30px rgba(46, 139, 87, 0.15); }
+    50% { box-shadow: 0 4px 30px rgba(46, 139, 87, 0.6), 0 0 50px rgba(46, 139, 87, 0.3); }
 }
 
 @keyframes shimmerBtn {
@@ -1619,7 +1619,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 99990;
-    background: radial-gradient(ellipse at center bottom, #1a0a2e 0%, #0d0521 40%, #050210 80%, #000005 100%);
+    background: radial-gradient(ellipse at center bottom, #0a2e1a 0%, #052110 40%, #021005 80%, #000805 100%);
     opacity: 0;
     transition: opacity 0.8s ease;
     overflow-y: auto;
@@ -1650,8 +1650,8 @@ body {
 .candle-message {
     font-family: 'Caveat', cursive;
     font-size: 1.6rem;
-    color: #ffb6c1;
-    text-shadow: 0 0 15px rgba(255, 182, 193, 0.5);
+    color: #7FC8A9;
+    text-shadow: 0 0 15px rgba(127, 200, 169, 0.5);
     margin-bottom: 30px;
     min-height: 60px;
     opacity: 0;
@@ -1701,7 +1701,7 @@ body {
 .candle-body {
     width: 12px;
     height: 50px;
-    background: linear-gradient(180deg, #ff9ecf, #e876a8);
+    background: linear-gradient(180deg, #5BAF8A, #3D9970);
     border-radius: 2px 2px 0 0;
     position: relative;
     box-shadow: inset -2px 0 4px rgba(0,0,0,0.15);
@@ -1754,19 +1754,19 @@ body {
     /* Wax gradient effect */
     background: linear-gradient(
         180deg,
-        #ffcce0 0%,
-        #ffb6d3 15%,
-        #ff9ecf 30%,
-        #e876a8 55%,
-        #d65d8c 75%,
-        #c44e7d 100%
+        #c5e8d5 0%,
+        #a8ddc0 15%,
+        #5BAF8A 30%,
+        #3D9970 55%,
+        #2E8B57 75%,
+        #1F7A48 100%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     /* 3D wax-like depth with paint-order trick */
     paint-order: stroke fill;
-    -webkit-text-stroke: 3px rgba(200, 80, 130, 0.5);
+    -webkit-text-stroke: 3px rgba(31, 122, 72, 0.5);
     filter: drop-shadow(1px 2px 1px rgba(0,0,0,0.35))
             drop-shadow(-1px 0px 1px rgba(255,255,255,0.15))
             drop-shadow(0 4px 8px rgba(0,0,0,0.25));
@@ -1776,7 +1776,7 @@ body {
 
 /* Efek glow di sekitar lilin angka */
 .number-candle {
-    filter: drop-shadow(0 0 12px rgba(255, 160, 200, 0.35));
+    filter: drop-shadow(0 0 12px rgba(127, 200, 169, 0.35));
 }
 
 /* Highlight sinar di atas angka */
@@ -1897,17 +1897,17 @@ body {
 .cake-top {
     width: 200px;
     height: 18px;
-    background: linear-gradient(180deg, #ffb6c1, #ff8fa3);
+    background: linear-gradient(180deg, #7FC8A9, #3D9970);
     border-radius: 8px 8px 0 0;
     position: relative;
     z-index: 1;
-    box-shadow: 0 -2px 8px rgba(255, 182, 193, 0.3);
+    box-shadow: 0 -2px 8px rgba(127, 200, 169, 0.3);
 }
 
 .cake-middle {
     width: 200px;
     height: 55px;
-    background: linear-gradient(180deg, #f8e0e6, #f0c8d0);
+    background: linear-gradient(180deg, #d5efe1, #b8e0cc);
     position: relative;
     border-left: 3px solid rgba(255,255,255,0.1);
     border-right: 3px solid rgba(0,0,0,0.05);
@@ -1916,7 +1916,7 @@ body {
 .cake-bottom {
     width: 200px;
     height: 55px;
-    background: linear-gradient(180deg, #e8a0b0, #d68898);
+    background: linear-gradient(180deg, #6DBF8B, #4FAF73);
     border-radius: 0 0 8px 8px;
     position: relative;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
@@ -1939,7 +1939,7 @@ body {
     display: block;
     width: 16px;
     height: 22px;
-    background: linear-gradient(180deg, #ffb6c1, #ff9eaf);
+    background: linear-gradient(180deg, #7FC8A9, #5BAF8A);
     border-radius: 0 0 50% 50%;
     animation: frostDrip 3s ease-in-out infinite alternate;
 }
@@ -1975,7 +1975,7 @@ body {
     transform: translateX(-50%);
     width: 250px;
     height: 60px;
-    background: radial-gradient(ellipse, rgba(255, 182, 193, 0.15), transparent 70%);
+    background: radial-gradient(ellipse, rgba(127, 200, 169, 0.15), transparent 70%);
     border-radius: 50%;
     z-index: 0;
 }
@@ -1990,18 +1990,18 @@ body {
     font-family: 'Caveat', cursive;
     font-size: 1.4rem;
     color: #fff;
-    background: linear-gradient(135deg, #6c5ce7, #a55eea, #ff6b81);
+    background: linear-gradient(135deg, #006B3F, #2E8B57, #5BAF8A);
     border: 2px solid rgba(255, 255, 255, 0.25);
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.4s ease;
-    box-shadow: 0 4px 20px rgba(108, 92, 231, 0.4);
+    box-shadow: 0 4px 20px rgba(0, 107, 63, 0.4);
     animation: tiupBtnGlow 2s ease-in-out infinite;
 }
 
 .btn-mulai-tiup:hover {
     transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 8px 30px rgba(108, 92, 231, 0.6);
+    box-shadow: 0 8px 30px rgba(0, 107, 63, 0.6);
 }
 
 .btn-mulai-tiup.hidden-btn {
@@ -2012,8 +2012,8 @@ body {
 }
 
 @keyframes tiupBtnGlow {
-    0%, 100% { box-shadow: 0 4px 20px rgba(108, 92, 231, 0.4); }
-    50% { box-shadow: 0 4px 30px rgba(108, 92, 231, 0.7), 0 0 40px rgba(255, 107, 129, 0.2); }
+    0%, 100% { box-shadow: 0 4px 20px rgba(0, 107, 63, 0.4); }
+    50% { box-shadow: 0 4px 30px rgba(0, 107, 63, 0.7), 0 0 40px rgba(46, 139, 87, 0.2); }
 }
 
 /* =========================================
@@ -2132,7 +2132,7 @@ body {
 .candle-message.final-msg {
     font-size: 1.3rem;
     color: #ffffff;
-    text-shadow: 0 0 20px rgba(255, 182, 193, 0.6), 0 0 40px rgba(255, 182, 193, 0.3);
+    text-shadow: 0 0 20px rgba(127, 200, 169, 0.6), 0 0 40px rgba(127, 200, 169, 0.3);
     max-width: 320px;
     line-height: 1.6;
 }
@@ -2181,7 +2181,7 @@ body {
     background: rgba(255, 255, 255, 0.15);
     color: #fff;
     transform: translateX(-50%) scale(1.05);
-    border-color: rgba(255, 182, 193, 0.4);
+    border-color: rgba(127, 200, 169, 0.4);
 }
 
 /* =========================================
@@ -2229,10 +2229,10 @@ body {
 .hold-progress-fill {
     width: 0%;
     height: 100%;
-    background: linear-gradient(90deg, #ff7eb3, #ff758c, #ffd700);
+    background: linear-gradient(90deg, #2E8B57, #006B3F, #ffd700);
     border-radius: 3px;
     transition: width 0.05s linear;
-    box-shadow: 0 0 8px rgba(255, 126, 179, 0.6);
+    box-shadow: 0 0 8px rgba(46, 139, 87, 0.6);
 }
 
 /* Visual feedback saat menekan kue */
@@ -2257,13 +2257,13 @@ body {
     font-family: 'Caveat', cursive;
     font-weight: 600;
     fill: transparent;
-    stroke: #ffb6c1;
+    stroke: #7FC8A9;
     stroke-width: 1.5;
     stroke-dasharray: 1500;
     stroke-dashoffset: 1500;
     stroke-linecap: round;
     stroke-linejoin: round;
-    filter: drop-shadow(0 0 6px rgba(255, 182, 193, 0.3));
+    filter: drop-shadow(0 0 6px rgba(127, 200, 169, 0.3));
 }
 
 /* Ketika section muncul (is-visible), jalankan animasi lukis */
@@ -2294,7 +2294,7 @@ body {
         fill: transparent;
     }
     100% {
-        fill: #ffb6c1;
+        fill: #7FC8A9;
         stroke-opacity: 0.3;
     }
 }
@@ -2302,9 +2302,9 @@ body {
 /* Fase 3: Glow halus setelah selesai */
 @keyframes paintGlow {
     0% {
-        filter: drop-shadow(0 0 4px rgba(255, 182, 193, 0.3));
+        filter: drop-shadow(0 0 4px rgba(127, 200, 169, 0.3));
     }
     100% {
-        filter: drop-shadow(0 0 12px rgba(255, 182, 193, 0.6));
+        filter: drop-shadow(0 0 12px rgba(127, 200, 169, 0.6));
     }
 }
